@@ -69,7 +69,7 @@ void init (void) {
 	/* Set up input pins */
 	TRISDSET = (1 << 8);
 	TRISFSET = (1 << 1);
-
+ 
 	/* Set up SPI as master */
 	SPI2CON = 0;
 	SPI2BRG = 4;
