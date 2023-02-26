@@ -1,8 +1,8 @@
 
 
-#include <stdint.h>   /* Declarations of uint_32 and the like */
-#include <pic32mx.h>  /* Declarations of system-specific addresses etc */
-#include "mipslab.h"  /* Declatations for these labs */
+#include <stdint.h>   
+#include <pic32mx.h>  
+#include "mipslab.h" 
 
 void tick(void);
 void init(void);
@@ -44,11 +44,7 @@ void tick(void)
 
 
 void init (void) {
-        /*
-	  This will set the peripheral bus clock to the same frequency
-	  as the sysclock. That means 80 MHz, when the microcontroller
-	  is running at 80 MHz. Changed 2017, as recommended by Axel.
-	*/
+
 	SYSKEY = 0xAA996655;  /* Unlock OSCCON, step 1 */
 	SYSKEY = 0x556699AA;  /* Unlock OSCCON, step 2 */
 	while(OSCCON & (1 << 21)); /* Wait until PBDIV ready */
