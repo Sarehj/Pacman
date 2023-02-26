@@ -1,4 +1,4 @@
-# PACMAN game on microchip for hardware engineering course
+# PACMAN game for hardware engineering course
 
 PacMan is a maze game. The player controls the Pacman character through an enclosed maze; the objective of the game is to eat all of the dots (coins) placed in the maze while avoiding some ghosts that pursue him. When all of the dots are eaten, the player advances to the next level. There are two levels with different maps.
 Placed at the two corners of the maze are large coins named "Freeze". Eating these will cause the ghosts to stop from moving and Pacman can pass over them without losing a life.
